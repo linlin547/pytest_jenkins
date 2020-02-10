@@ -1,0 +1,80 @@
+#name: "lili"   # yaml文件的每一个冒号后必须跟空格
+#sex: 男   # 会自动转换为python数据类型
+
+# ---对象---
+#info: {"name": "lzl", "sex":"男"}   # 值为python中的字典
+
+# 大小写
+#Info: {"name": "lzl", "sex":"男"}
+
+# 缩进表示层级关系，相同层级元素左对齐
+#info:
+#  name: "lzl"
+#  sex: "男"
+
+# ---数组---
+# yaml文件支持列表格式
+#data:
+#  - 1
+#  - 2
+# python 列表类型
+#data: [1,2]
+
+# 模拟json {"name":[{"ke1":"value1"},{"ke2":"value2"}]}
+#name:
+#  - ke1: value1
+#  - ke2: value2
+
+# ---纯量---
+
+# 布尔值
+# yaml文件格式
+#tr1: true
+#fa1: false
+# python 布尔值
+#tr2: True
+#fa2: False
+
+# 整数和浮点数
+#ind: 122
+#flo: 12.000001
+
+# 空类型
+# yaml语法
+#data1: ~
+# 值为空
+#data4:     # 支持返回python None类型
+# java js shell -> Null null
+#data5: Null  #  支持返回None
+#data6: null  #  支持返回None
+
+# python类型
+#data2: None  # 不支持python None类型 结果为：字符串
+#data3: none   # 不支持类型 结果为：字符串
+#data7: ""  # 不支持返回None
+
+# 日期类型
+# 年月日
+#date1: 2020-11-11  # 返回 datetime.date日期类型
+## 年月日 时分秒
+#data2: 2020-11-11 11:11:11 # 返回 datetime.datetime
+# 时分秒
+#data3: 11:11:11  # 返回某个数字 不建议这么使用
+
+#日期类型注意事项
+#data4: 2020-01-11  # 注意年月日某个位置为单个数字时 必须要补0，补程两位数
+#data5: 2020-11-11 01:01:01  # 注意时分秒某个位置为单个数字时 必须要补0，补程两位数
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+
+
+info: &data
+  name: "lili"
+  phone: "13333333333"
+
+address:
+  <<: *data
+  detail: "航头路18号"
